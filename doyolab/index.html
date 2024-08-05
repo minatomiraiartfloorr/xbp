@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卵かけフロア</title>
+  <link rel="stylesheet" type="text/css" href="https:coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="https:coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-8/css/6-1-8.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url(./image/office.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .center{
+      text-align: center;
+      margin: 0;
+    } 
+
+    .text {
+     	position: relative;
+    	font-size: 950%;
+	    color: yellow;
+      margin: 0;
+	    -webkit-text-stroke: 10px yellow;
+    }
+
+    .text::before {
+	    content: attr(data-text);
+	    position: absolute;
+	    color: yellow;
+	    -webkit-text-stroke: 2px #FFF;
+    }
+
+    .caprasimo-regular {
+      font-family: "Caprasimo", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .loading-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .image-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .main-container {
+      display: none;
+    }
+
+    .image {
+      position: absolute;
+      width: 45%;
+      height: 55%;
+      top: 0;
+      left: 100%;
+      animation: slide 0.4s linear infinite;
+    }
+
+    .slider img{
+      width: 75%;
+      height: auto;
+    }
+
+    .slider .slick-slide{
+      margin:0 10px;
+    }
+
+    @keyframes slide {
+      0% {
+        transform: translate(20, 20);
+      }
+      100% {
+        transform: translate(-100%, 100%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loading-container">
+    <div class="image-container">
+
+    </div>
+  </div>
+
+  <div class="main-container">
+    <h1 class="center">doyoseminar</h1><br>
+    <h2 class="caprasimo-regular center text" data-text="EGG">EGG</h2>
+    <div>
+      <ul class="slider">
+        <li><a href="./essenseofchallenge2024.html"><img src="./image/卵のイメージ2.png"></a></li>
+        <li><a href="./202404.html"><img src="./image/卵のイメージ3.png"></a></li>
+        <li><a href="./2024051.html"><img src="./image/卵のイメージ4.png"></a></li>
+        <li><a href="./2024052.html"><img src="./image/卵のイメージ5.png"></a></li>
+        <li><a href="./2024061.html"><img src="./image/卵のイメージ6.png"></a></li>
+        <li><a href="./2024062.html"><img src="./image/卵のイメージ7.png"></a></li>
+        <li><a href="./2024071.html"><img src="./image/卵のイメージ8.png"></a></li>
+        <li><a href="./2024072.html"><img src="./image/卵のイメージ9.png"></a></li>
+      </ul>
+    </div>
+    <h2 class="caprasimo-regular text" data-text="SPLASH FLOOR">SPLASH FLOOR</h2>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
