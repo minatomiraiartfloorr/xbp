@@ -1,0 +1,32 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #f0f0f0;
+    height: 100vh;
+    background-image: url(../image/office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo-container {
+    display: flex;
+    overflow: hidden;
+    height: 140px;
+}
+
+.photo {
+    flex: 0 0 auto;
+    height: 100%;
+    animation: photoFlow 7s linear infinite;
+}
+
+@keyframes photoFlow {
+    0% {
+      transform: translateX(-70%);
+    }
+    100% {
+      transform: translateX(70%);
+    }
+}
